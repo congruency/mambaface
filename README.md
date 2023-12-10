@@ -11,8 +11,19 @@ The following options were added as issues came up:
 * --train_split=<name:str>
 
 # Getting Started
+
+## With virtual environments (preferred for sharing caches)
+```
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+./train_data.sh or ./train_chat.sh
+```
+
+## With docker (preferred for isolation)
 ```
 docker run --gpus all -v $(pwd):/workspace -it pytorch/pytorch:2.1.1-cuda12.1-cudnn8-devel
+apt update && apt install git
 pip install -r requirements.txt
 ./train_data.sh or ./train_chat.sh
 ```
