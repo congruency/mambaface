@@ -23,7 +23,7 @@ While you shouldn't need to modify any code, this software is only intended for 
 Apache 2.0
 
 # Hugging Face libraries used
-[Accelerate](https://github.com/huggingface/accelerate)
-[Datasets](https://github.com/huggingface/datasets)
-[Evaluate](https://github.com/huggingface/evaluate)
-[Transformers](https://github.com/huggingface/transformers)
+* [Accelerate](https://github.com/huggingface/accelerate)
+* [Datasets](https://github.com/huggingface/datasets)
+* [Evaluate](https://github.com/huggingface/evaluate)
+* [Transformers](https://github.com/huggingface/transformers)
