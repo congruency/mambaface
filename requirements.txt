@@ -1,0 +1,9 @@
+wheel
+packaging>=23.2
+torch
+transformers @ git+https://github.com/huggingface/transformers@df5c5c62ae253055336f5bb0828ca8e3e15ab6bd
+datasets>=2.15.0
+accelerate>=0.25.0
+evaluate>=0.4.1
+causal-conv1d>=1.0.1
+mamba-ssm>=1.0.1
