@@ -6,13 +6,13 @@ run_clm.py is from the transformers examples. It was adapted to work with the ma
 The shell scripts are examples of what I was able to run on a 4090
 
 The following options were added as issues came up:
-	--chat_template=<repo:str>
-	--column_name=<name:str>
-	--train_split=<name:str>
+* --chat_template=<repo:str>
+* --column_name=<name:str>
+* --train_split=<name:str>
 
 # Getting Started
 ```
-docker run --gpus all -v $(pwd):/workspace -it nvcr.io/nvidia/pytorch:23.11-py3
+docker run --gpus all -v $(pwd):/workspace -it pytorch/pytorch:2.1.1-cuda12.1-cudnn8-devel
 pip install -r requirements.txt
 ./train_data.sh or ./train_chat.sh
 ```
