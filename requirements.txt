@@ -1,11 +1,11 @@
 wheel
-packaging>=23.2
+packaging==23.2
 torch
+scipy==1.11.4
 transformers @ git+https://github.com/huggingface/transformers@df5c5c62ae253055336f5bb0828ca8e3e15ab6bd
-datasets>=2.15.0
-accelerate>=0.25.0
+datasets==2.15.0
+accelerate==0.25.0
 evaluate>=0.4.1
-bitsandbytes>=0.41.3
-scipy>=1.11.4
-causal-conv1d>=1.0.1
-mamba-ssm>=1.0.1
+bitsandbytes==0.41.3
+causal-conv1d==1.0.0
+mamba-ssm==1.0.1
