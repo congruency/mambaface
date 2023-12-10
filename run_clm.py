@@ -67,6 +67,11 @@ logger = logging.getLogger(__name__)
 
 # Reference transformers/models/gpt_neox/modeling_gpt_neox.py
 class MambaTrainer(Trainer):
+    def save_model(self, output_dir, _internal_call):
+        os.makedirs(output_dir, exist_ok=True)
+        # safetensors doesn't support shared tensors
+        torch.save(self.model.state_dict(), f"{output_dir}/pytorch_model.bin")
+
     def compute_loss(self, model, inputs, return_inputs=False):
 
         hidden_states = inputs["input_ids"]
