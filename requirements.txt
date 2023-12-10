@@ -5,5 +5,7 @@ transformers @ git+https://github.com/huggingface/transformers@df5c5c62ae2530553
 datasets>=2.15.0
 accelerate>=0.25.0
 evaluate>=0.4.1
+bitsandbytes>=0.41.3
+scipy>=1.11.4
 causal-conv1d>=1.0.1
 mamba-ssm>=1.0.1
